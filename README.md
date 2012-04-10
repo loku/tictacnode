@@ -9,6 +9,7 @@ ___    __     ___       __           __   __   ___
 
 ## Overview
 
+A sample node.js/backbone.js game application.
 
 ## Installation
 
