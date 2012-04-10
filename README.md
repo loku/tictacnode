@@ -11,3 +11,8 @@ ___    __     ___       __           __   __   ___
 
 
 ## Installation
+git clone http://github.com/loku/tictacnode
+npm install -d
+
+## To Run
+In the root tictacnode directory: node app.js
