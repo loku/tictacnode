@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href='http://fonts.googleapis.com/css?family=Trade+Winds' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <link href="/styles/game.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <script type="text/template" id="game-template">
+      <table>
+        <tr><th>Player 1</th><th>Player 2</th><th>Winner</th></tr>
+        <tr>
+          <td><div class="player" id="player1"><%= player1 %></div></td>
+          <td><div class="player" id="player2"><%= player2 %></div></td>
+          <td><div class="player" id="winner"></div></td>
+        </tr>
+      </table>
+      <table id="board">
+      </table>
+    </script>
+
+    <div id="game">
+    </div>
+  <script src="/browserify.js"></script>
+  </body>
+</html>

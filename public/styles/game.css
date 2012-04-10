@@ -1,0 +1,78 @@
+
+
+.boardCell {
+  width:100px;
+  height:100px;
+  border-color:black;
+  font-family: 'Trade Winds', cursive;
+  font-size: 36px;
+  min-height: 36px;
+  text-align:center;
+  display: table-cell;
+  vertical-align:middle;
+}
+
+/* row1 */
+#cell00 {
+  border-right-style:solid;
+  border-bottom-style:solid;
+}
+
+#cell01 {
+  border-left-style:solid;
+  border-bottom-style:solid;
+  border-right-style:solid;
+}
+
+#cell02 {
+  border-left-style:solid;
+  border-bottom-style:solid;
+}
+
+/* row2 */
+
+#cell10 {
+  border-top-style:solid;
+  border-right-style:solid;
+  border-bottom-style:solid;
+}
+
+#cell11 {
+  border-top-style:solid;
+  border-right-style:solid;
+  border-bottom-style:solid;
+  border-left-style:solid;
+}
+
+#cell12 {
+  border-top-style:solid;
+  border-bottom-style:solid;
+  border-left-style:solid;
+}
+
+/*row3*/
+#cell20 {
+  border-top-style:solid;
+  border-right-style:solid;
+}
+
+#cell21 {
+  border-top-style:solid;
+  border-right-style:solid;
+  border-left-style:solid;
+}
+
+#cell22 {
+  border-top-style:solid;
+  border-left-style:solid;
+}
+
+.player {
+  width:110px;
+  text-align:center;
+}
+
+.activePlayer {
+  background-color:lightgreen;
+}
+
