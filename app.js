@@ -47,7 +47,7 @@ console.log("Server ready: Throw 'em up!!!");
 
 var io = require('socket.io').listen(app);
 
-io.set('log level', 1);
+//io.set('log level', 1);
 
 io.sockets.on('connection', function (socket) {
   require('./lib/controllers')(socket);
