@@ -4,6 +4,7 @@
     <title></title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link href='http://fonts.googleapis.com/css?family=Trade+Winds' rel='stylesheet' type='text/css'>
+
     <link href="/styles/game.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="/socket.io/socket.io.js"></script>
@@ -13,8 +14,8 @@
       <table>
         <tr><th>Player 1</th><th>Player 2</th><th>Winner</th></tr>
         <tr>
-          <td><div class="player" id="player1"><%= player1.name %></div></td>
-          <td><div class="player" id="player2"><%= player2.name %></div></td>
+          <td><div class="player" id="xPlayer"></div></td>
+          <td><div class="player" id="oPlayer"></div></td>
           <td><div class="player" id="winner"></div></td>
         </tr>
       </table>
