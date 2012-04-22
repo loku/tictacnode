@@ -5,26 +5,71 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link href='http://fonts.googleapis.com/css?family=Trade+Winds' rel='stylesheet' type='text/css'>
 
-    <link href="/styles/game.css" rel="stylesheet" type="text/css">
+    
+    <!-- twitter bootstrap -->
+    <link href="/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <link href="/css/game.css" rel="stylesheet" type="text/css">
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-modal.js"></script>
     <script src="/socket.io/socket.io.js"></script>
+
+    <script src="/js/bootstrap.min.js"></script>
+
   </head>
   <body>
     <script type="text/template" id="game-template">
       <table>
-        <tr><th>Player 1</th><th>Player 2</th><th>Winner</th></tr>
+        <tr><th class="playerLabel">Player X</th>
+          <th class="playerLabel">Player O</th>
+          <th class="playerLabel">Winner</th></tr>
         <tr>
-          <td><div class="player" id="xPlayer"></div></td>
-          <td><div class="player" id="oPlayer"></div></td>
+          <td><div class="player" id="xPlayer"></div><div class="playerAvatar" id="xPlayerAvatar"></div></td>
+          <td><div class="player" id="oPlayer"></div><div class="playerAvatar" id="oPlayerAvatar"></div></td>
           <td><div class="player" id="winner"></div></td>
         </tr>
       </table>
       <table id="board">
       </table>
     </script>
-
+    <div id="statusBlock">
+      <h1 id="motto">Two men enter, one man leaves...</h1>
+      <h3 id="status">Waiting for 2 Player</h3>
+      <div id="circle">
+          <div id="one"></div>
+          <div id="two"></div>
+          <div id="three"></div>
+      </div>
+    </div>
+    
     <div id="game">
     </div>
+    
+    <div id="popups">
+      <div class="modal" id="myModal">
+      <div class="modal-header">
+        <a class="close" data-dismiss="modal">×</a>
+        <h3>Game Login</h3>
+      </div>
+      <div class="modal-body">
+        <p>Enter a user name or email address if you want you use Gravatar.</p>
+        <form id="loginForm" class="well">
+          <label>Name</label>
+          <input id="gameName" type="text" class="span3" placeholder="name or email">
+          <span class="help-inline">Name your opponent will see.</span>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="btn">Cancel</a>
+        <a id="enterGame" href="#" class="btn btn-primary disabled">Enter Game</a>
+      </div>
+      </div>
+    </div>
+    
+
   <script src="/browserify.js"></script>
   </body>
 </html>

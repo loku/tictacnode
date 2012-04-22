@@ -13,10 +13,18 @@
 
 
 body {
-  background-image: url("/images/chalkboard.jpg");
-  font-family:'schoolbell';
-  font-size:25px;
+  background-image: url("/img/chalkboard.jpg");
+}
+
+#motto {
+  font-family: 'rayando', cursive;
   color:rgba(255,255,204,0.9);
+}
+
+#status {
+  color:rgba(255,255,204,0.9);
+  margin-top:12px;
+  margin-bottom:20px;
 }
 
 .boardCell {
@@ -29,6 +37,15 @@ body {
   text-align:center;
   display: table-cell;
   vertical-align:middle;
+
+  color:rgba(255,255,204,0.9);
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+
 }
 
 /* row1 */
@@ -86,12 +103,62 @@ body {
   border-left-style:solid;
 }
 
+.playerLabel{
+ font-size:19px;
+ color:rgba(255,255,204,0.9);
+ font-family:'schoolbell';
+}
+
+.playerAvatar {
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
 .player {
   width:110px;
   text-align:center;
+  font-size: 25px;
+  font-family:'schoolbell';
+  color:rgba(255,255,204,0.9);
 }
 
 .activePlayer {
  text-decoration:underline;
+}
+
+
+
+#circle div {
+  background-color: #000;
+  float: left;
+  height: 30px;
+  margin-left: 10px;
+  width: 30px;
+  -webkit-animation-name: circle_move;
+  -webkit-border-radius: 30px;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: linear;
+  opacity: 0.5;
+}
+div#one{
+        -webkit-animation-delay: 0.4s;
+  }
+div#two{
+        -webkit-animation-delay: 0.8s;
+}
+div#three{
+        -webkit-animation-delay: 1.2s;
+}
+
+@-webkit-keyframes circle_move{
+  0% { background-color:#000; }
+  30%{ opacity:1;
+    background-color:rgba(255,255,204,0.9);
+      }
+  60%	{ background-color:#000; }
+  100% {
+          opacity:0.5;
+          background-color:#000; }
 }
 
