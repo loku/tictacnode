@@ -9,7 +9,7 @@ ___    __     ___       __           __   __   ___
 
 ## Overview
 
-A sample node.js/backbone.js game application.
+A sample node.js + backbone.js + socket.io multi-player game application.
 
 ## Installation
 
