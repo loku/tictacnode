@@ -11,8 +11,15 @@ ___    __     ___       __           __   __   ___
 
 A sample node.js + backbone.js + socket.io multi-player game application.
 
+## Support
+Please post any questions to project issues.
+
 ## Installation
 
+### Dependencies
+* redis server
+
+### To install
 ```
 git clone http://github.com/loku/tictacnode
 npm install -d
@@ -22,6 +29,10 @@ npm install -d
 ```
 In the root tictacnode directory: node app.js
 ```
+
+## Roadmap
+* extract core socket.io and backbone.js implementation into npm module
+* update docs based on feedback
 
 ## License ##
 
